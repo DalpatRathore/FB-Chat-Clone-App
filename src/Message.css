@@ -1,0 +1,18 @@
+.message {
+  margin: 0.5rem;
+  background: #666;
+  width: fit-content;
+  border-radius: 10px;
+}
+.message_user {
+  margin: 0.5rem 0.5rem 0.5rem auto;
+  text-align: left !important;
+  width: fit-content;
+}
+
+.message_userCard {
+  background: rgb(25, 130, 182) !important;
+}
+.message_guestCard {
+  background: #999 !important;
+}
