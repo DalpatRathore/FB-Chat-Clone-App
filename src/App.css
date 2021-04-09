@@ -1,24 +1,71 @@
 .app {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+.app__logo {
+  width: 50px;
+  object-fit: contain;
 }
 
-.app_form {
-  padding: 20px;
+.app__header {
+  padding: 0.5rem;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(12, 36, 150);
+  background: linear-gradient(
+    52deg,
+    rgba(12, 36, 150, 0.51) 0%,
+    rgba(238, 238, 238, 0.51) 48%,
+    rgba(161, 20, 117, 0.51) 78%,
+    rgba(173, 19, 19, 0.51) 100%
+  );
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3), 0px -1px 3px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  z-index: 100;
+}
+
+.app__header > h2 > span {
+  color: #026;
+  font-style: italic;
+}
+
+.app__flipMove {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  padding: 1rem;
+  margin: 85px 0;
+}
+
+.app__form {
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   background: #e9e9eb;
+
   position: fixed;
-  bottom: 20px;
+  bottom: 2px;
   width: 100%;
   z-index: 10;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.app_formcontrol {
-  width: 50%;
+.app__formcontrol {
+  width: 100% !important;
   display: flex !important;
   flex-direction: row !important;
 }
 
-.app_input {
+.app__input {
   flex: 1;
 }

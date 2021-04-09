@@ -1,18 +1,31 @@
 .message {
   margin: 0.5rem;
-  background: #666;
   width: fit-content;
-  border-radius: 10px;
+  letter-spacing: 1px !important;
+  box-shadow: 2px 2px 5px #111;
+  border-radius: 5px;
 }
-.message_user {
+.message__user {
   margin: 0.5rem 0.5rem 0.5rem auto;
   text-align: left !important;
   width: fit-content;
 }
 
-.message_userCard {
-  background: rgb(25, 130, 182) !important;
+.message__userCard {
+  background: rgb(110, 185, 236) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(60, 122, 163, 0.9) 0%,
+    rgba(175, 90, 175, 0.8) 100%
+  ) !important;
+  color: aliceblue !important;
 }
-.message_guestCard {
-  background: #999 !important;
+.message__guestCard {
+  background: #333 !important;
+  background: linear-gradient(
+    90deg,
+    rgba(49, 48, 48, 0.863) 0%,
+    rgba(97, 95, 95, 0.8) 100%
+  ) !important;
+  color: aliceblue !important;
 }

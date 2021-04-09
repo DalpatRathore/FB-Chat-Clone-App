@@ -5,10 +5,10 @@ import "./Message.css";
 const Message = forwardRef(({ username, message }, ref) => {
   const isUser = username === message.username;
   return (
-    <div ref={ref} className={`message ${isUser && "message_user"} `}>
-      <Card className={isUser ? "message_userCard" : "message_guestCard"}>
+    <div ref={ref} className={`message ${isUser && "message__user"} `}>
+      <Card className={isUser ? "message__userCard" : "message__guestCard"}>
         <CardContent>
-          <Typography color="white" variant="h5" component="h2">
+          <Typography color="inherit" variant="body2" component="p">
             {!isUser && `${message.username || "Unknown"}:`} {message.message}
           </Typography>
         </CardContent>
